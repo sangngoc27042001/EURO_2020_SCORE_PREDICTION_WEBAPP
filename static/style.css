@@ -24,7 +24,7 @@ body {
     border-color: aliceblue;
     vertical-align: middle;
   }
-h1{
+h1,h2{
     font-size: 50px;
 }
 form,option,select, button{
@@ -34,3 +34,15 @@ form,option,select, button{
     align-content: center;
     text-align: center;
 }
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    h1{
+        font-size: 22px;
+    }
+    form,option,select, button{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+  }
