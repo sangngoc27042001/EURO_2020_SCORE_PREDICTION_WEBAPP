@@ -34,15 +34,28 @@ form,option,select, button{
     align-content: center;
     text-align: center;
 }
+.height{
+    height: 50px;
+    width:100%;
+}
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
+    body{
+        background-size: 100% 100%;
+    }
+    .main_div{
+        width: 90%;
+    }
     h1{
         font-size: 22px;
     }
     form,option,select, button{
-        font-size: 14px;
+        font-size: 18px;
     }
     h2{
         font-size: 14px;
+    }
+    .height{
+        height: 200px;
     }
   }
