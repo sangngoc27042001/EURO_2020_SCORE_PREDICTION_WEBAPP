@@ -1,0 +1,46 @@
+<!-- Coding Debugging (https://codingdebugging.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EURO 2020 SCORES PREDICTION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/19/c5/e6/19c5e65086143d66c77a7cc34b0eafd9.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    
+    <body>
+        
+        <div class="main_div">
+            <h1>SCORES PREDICTION</h1>
+            <form action="/predict" method="POST">
+                <label for="time"><b>Time</b></label>
+                <select name="time" id="time">
+                    <option value=2>2:00 (GMT+7)</option>
+                    <option value=20>20:00 (GMT+7)</option>
+                    <option value=23>23:00 (GMT+7)</option>
+                </select><br><br>
+                
+                <select name="team1" id="team1" style="width: 40%;">
+                    {%for c in country%}
+                    <option value={{c}}>{{c}}</option>
+                    {%endfor%}
+                </select>
+                <img src="https://upload.wikimedia.org/wikipedia/vi/9/96/UEFA_Euro_2020_Logo.svg" alt="Girl in a jacket" width="150" height="150">
+                <select name="team2" id="team2" style="width: 40%;">
+                    {%for c in country%}
+                    <option value={{c}}>{{c}}</option>
+                    {%endfor%}
+                </select><br><br><br>
+                <button type="submit" style="align-self: center;">PREDICT</button>
+            </form>
+            {% if  predict%}
+            <h1 style="text-align: center;">{{team1}} {{score1}} : {{score2}} {{team2}}</h1>
+            {%endif%}
+        </div>
+        
+    </body>
+</html>

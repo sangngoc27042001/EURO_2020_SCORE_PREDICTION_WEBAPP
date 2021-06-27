@@ -1,0 +1,31 @@
+body {
+    background-image: url("https://editorial.uefa.com/resources/026a-1296db75e81a-f80c9f4fd9a2-1000/fbl-euro-2020-2021-trophy-britain.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+}
+.main_div{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(36, 32, 32, 0.4); /* Black w/opacity/see-through */
+    width: 70%;
+    margin: auto;
+    height: auto;
+    text-align: left;
+    align-self: center;
+    border-style: solid;
+    border-color: aliceblue;
+    vertical-align: middle;
+  }
+h1{
+    font-size: 50px;
+}
+form,option,select, button{
+    font-size: 30px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
