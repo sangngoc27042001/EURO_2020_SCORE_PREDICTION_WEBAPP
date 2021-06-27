@@ -6,8 +6,13 @@ body {
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
 }
 .main_div{
+    margin-top: 1000px;
+    margin: auto;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(36, 32, 32, 0.4); /* Black w/opacity/see-through */
     width: 70%;
