@@ -29,7 +29,7 @@
                     <option value={{c}}>{{c}}</option>
                     {%endfor%}
                 </select>
-                <img src="https://upload.wikimedia.org/wikipedia/vi/9/96/UEFA_Euro_2020_Logo.svg" alt="Girl in a jacket" width="150" height="150">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/9/96/UEFA_Euro_2020_Logo.svg" alt="Girl in a jacket" width="15%" height="15%">
                 <select name="team2" id="team2" style="width: 40%;">
                     {%for c in country%}
                     <option value={{c}}>{{c}}</option>
@@ -38,7 +38,7 @@
                 <button type="submit" style="align-self: center;">PREDICT</button>
             </form>
             {% if  predict%}
-            <h1 style="text-align: center;">{{team1}} {{score1}} : {{score2}} {{team2}}</h1>
+            <h2 style="text-align: center;">{{team1}} {{score1}} : {{score2}} {{team2}}</h2>
             {%endif%}
         </div>
     </body>
